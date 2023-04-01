@@ -5,7 +5,7 @@ function FilmDue() {
 
     useEffect(() => {
         const Fetch = async () => {
-            const r = await fetch('http://www.omdbapi.com/?apikey=fda21f82&s=reign');
+            const r = await fetch('http://www.omdbapi.com/?apikey=fda21f82&s=insatiable');
             const data = await r.json();
             setData(data.Search);
         };
@@ -17,7 +17,7 @@ function FilmDue() {
                 {data ? (
                     data.slice(0, 6).map((reign) => (
                         <div key={reign.imdbID} className="col mb-2 px-1">
-                            <img className="img-fluid" src={reign.Poster} alt={reign.Title} style={{ height: '230px' }} />
+                            <img className="img-fluid" src={reign.Poster} alt={reign.Title} style={{ height: '230px', width: '300px' }} />
                         </div>
                     ))
                 ) : (

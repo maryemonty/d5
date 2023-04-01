@@ -5,7 +5,7 @@ function Film() {
 
     useEffect(() => {
         const Fetch = async () => {
-            const r = await fetch('http://www.omdbapi.com/?apikey=fda21f82&s=harry%20potter');
+            const r = await fetch('http://www.omdbapi.com/?apikey=fda21f82&s=you');
             const data = await r.json();
             setData(data.Search);
         };
@@ -17,7 +17,7 @@ function Film() {
                 {data ? (
                     data.slice(0, 6).map((HarryPotter) => (
                         <div key={HarryPotter.imdbID} className="col mb-2 px-1">
-                            <img className="img-fluid" src={HarryPotter.Poster} alt={HarryPotter.Title} style={{ height: '230px' }} />
+                            <img className="img-fluid" src={HarryPotter.Poster} alt={HarryPotter.Title} style={{ height: '230px', width: '300px' }} />
                         </div>
                     ))
                 ) : (

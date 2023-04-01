@@ -5,7 +5,7 @@ function FilmTre() {
 
     useEffect(() => {
         const Fetch = async () => {
-            const r = await fetch('http://www.omdbapi.com/?apikey=fda21f82&s=tech');
+            const r = await fetch('http://www.omdbapi.com/?apikey=fda21f82&s=shrek');
             const data = await r.json();
             setData(data.Search);
         };
@@ -17,7 +17,7 @@ function FilmTre() {
                 {data ? (
                     data.slice(0, 6).map((tech) => (
                         <div key={tech.imdbID} className="col mb-2 px-1">
-                            <img className="img-fluid" src={tech.Poster} alt={tech.Title} style={{ height: '230px' }} />
+                            <img className="img-fluid" src={tech.Poster} alt={tech.Title} style={{ height: '230px', width: '300px' }} />
                         </div>
                     ))
                 ) : (
