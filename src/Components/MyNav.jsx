@@ -5,7 +5,7 @@ import { Navbar } from "react-bootstrap"
 
 function MyNav() {
     return (
-        <Navbar sticky="top">
+        <Navbar sticky="top" className="bg-black">
             <div className="container-fluid">
                 <img src={Logo} alt="logo" style={{ width: '100px' }} />
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
