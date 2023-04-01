@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 
-function Film() {
+function Film(props) {
     const [data, setData] = useState(null);
 
     useEffect(() => {
         const Fetch = async () => {
-            const r = await fetch('http://www.omdbapi.com/?apikey=fda21f82&s=naruto');
+            const r = await fetch(`http://www.omdbapi.com/?apikey=fda21f82&s=${props.film}`);
             const data = await r.json();
             setData(data.Search);
         };
