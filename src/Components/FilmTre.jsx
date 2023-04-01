@@ -17,7 +17,7 @@ function FilmTre() {
                 {data ? (
                     data.slice(0, 6).map((tech) => (
                         <div key={tech.imdbID} className="col mb-2 px-1">
-                            <img className="img-fluid" src={tech.Poster} alt={tech.Title} style={{ width: '238px' }} />
+                            <img className="img-fluid" src={tech.Poster} alt={tech.Title} style={{ height: '230px' }} />
                         </div>
                     ))
                 ) : (

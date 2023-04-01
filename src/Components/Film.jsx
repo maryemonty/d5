@@ -17,7 +17,7 @@ function Film() {
                 {data ? (
                     data.slice(0, 6).map((HarryPotter) => (
                         <div key={HarryPotter.imdbID} className="col mb-2 px-1">
-                            <img className="img-fluid" src={HarryPotter.Poster} alt={HarryPotter.Title} style={{ width: '238px' }} />
+                            <img className="img-fluid" src={HarryPotter.Poster} alt={HarryPotter.Title} style={{ height: '230px' }} />
                         </div>
                     ))
                 ) : (

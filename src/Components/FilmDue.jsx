@@ -17,7 +17,7 @@ function FilmDue() {
                 {data ? (
                     data.slice(0, 6).map((reign) => (
                         <div key={reign.imdbID} className="col mb-2 px-1">
-                            <img className="img-fluid" src={reign.Poster} alt={reign.Title} style={{ width: '238px' }} />
+                            <img className="img-fluid" src={reign.Poster} alt={reign.Title} style={{ height: '230px' }} />
                         </div>
                     ))
                 ) : (
