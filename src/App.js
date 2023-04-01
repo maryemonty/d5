@@ -7,7 +7,7 @@ import TvShows from './Components/TvShows';
 
 function App() {
   return (
-    <div className="App bg-black">
+    <div className="bg-black">
       <MyNav />
       <TvShows />
       <Films />
