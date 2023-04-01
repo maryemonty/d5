@@ -1,9 +1,6 @@
-.App {
-  text-align: center;
-}
-
 .col img:hover {
   transform: scale(1.1);
+  z-index: 3;
 }
 
 @media (prefers-reduced-motion: no-preference) {

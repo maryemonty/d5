@@ -5,7 +5,7 @@ function FilmDue() {
 
     useEffect(() => {
         const Fetch = async () => {
-            const r = await fetch('http://www.omdbapi.com/?apikey=fda21f82&s=insatiable');
+            const r = await fetch('http://www.omdbapi.com/?apikey=fda21f82&s=barbie');
             const data = await r.json();
             setData(data.Search);
         };

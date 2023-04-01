@@ -5,7 +5,7 @@ function Film() {
 
     useEffect(() => {
         const Fetch = async () => {
-            const r = await fetch('http://www.omdbapi.com/?apikey=fda21f82&s=you');
+            const r = await fetch('http://www.omdbapi.com/?apikey=fda21f82&s=naruto');
             const data = await r.json();
             setData(data.Search);
         };
